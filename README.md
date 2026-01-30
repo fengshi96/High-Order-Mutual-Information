@@ -8,7 +8,7 @@ This folder contains Python scripts to compute the $n$th-order mutual informatio
 
 ## Requirements
 
-- Python 3.8+
+- Python 3.10+
 - `numpy`
 - `matplotlib`
 - `numba` (optional, for faster ground-state combinatorics in MI_gs.py)
