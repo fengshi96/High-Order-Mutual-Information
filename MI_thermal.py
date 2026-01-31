@@ -152,6 +152,7 @@ def plot_in_vs_beta(
         print(f"Computing N={n} ({idx}/{total_n})")
         cache = _prepare_cache(n, j0)
         values = mutual_information_curve_cached(cache, betas, log_base=log_base)
+        print(f"I_{n} at min beta J={betaj_min:g}: {values[0]}")
         plt.plot(betaj, values, lw=2, label=rf"$N={n}$")
 
     plt.axhline(0.0, color="k", lw=0.8, alpha=0.4)
